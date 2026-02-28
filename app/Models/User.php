@@ -29,6 +29,17 @@ class User extends Authenticatable
     ];
 
     /**
+     * Default attribute values for new players.
+     *
+     * @var array<string, mixed>
+     */
+    protected $attributes = [
+        'level'      => 1,
+        'experience' => 0,
+        'health'     => 100,
+    ];
+
+    /**
      * The attributes that should be hidden for serialization.
      *
      * @var list<string>
